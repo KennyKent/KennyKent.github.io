@@ -46,6 +46,7 @@ img {
     text-decoration: none;
     color: #FFF;
     padding-right: 1.25em;
+    z-index: 1;
 }
 
 #header a:hover {
@@ -88,7 +89,7 @@ img {
 }
 
 #banner:before {
-    content: 'bla bla bla';
+    content: '';
     display: block;
     background-color: #000;
     height: 100%;
@@ -146,7 +147,7 @@ img {
 @media screen and (max-width: 480px) {
 
     #banner {
-        font-size: .85em;
+        font-size: 1.85em;
         min-height: 0;
         padding: 8em 2em 4em 2em;
     }
@@ -193,7 +194,7 @@ img {
 {
     .progress-bar {
         height: 100%;
-        font-size: 50px;
+        font-size: 15px;
         line-height: 20px;
     }
 
@@ -244,23 +245,23 @@ ul.icons li {
     background-color: #f9f9f9;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 980px) {
 
-    .wrapper > .inner {
+    .wrapper .inner {
         width: 60em;
     }
 
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 736px) {
 
-    .wrapper > .inner {
+    .wrapper .inner {
         width: 90%;
     }
 
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 480px) {
 
     .wrapper {
         padding: 3em 0 1em 0;
