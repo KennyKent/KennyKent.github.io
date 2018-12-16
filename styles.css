@@ -34,10 +34,11 @@ img {
     text-align: right;
     left: 0;
     width: 100%;
-    background-size: 150px;
     z-index: 1;
-    top: 1.5em;
-    height: 20px;
+    padding-top: 1.0em;
+    opacity:0.5;
+    height: 50px;
+    background-color: #0e080c;
 }
 
 #header a {
@@ -45,12 +46,10 @@ img {
     text-decoration: none;
     color: #FFF;
     padding-right: 1.25em;
-    background-color: #0e080c;
 }
 
 #header a:hover {
     color: #3498db;
-    /*background-color: #FFFFFF;*/
 }
 
 
@@ -177,31 +176,12 @@ img {
 /* Icon */
 
 .icon {
-    text-decoration: none;
-    border-bottom: none;
     position: relative;
+    font-size: 2em;
     font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-}
-
-.icon:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-}
-
-.icon > .label {
-    display: none;
 }
 
 ul.icons {
-    cursor: default;
     list-style: none;
     padding-left: 0;
 }
@@ -210,15 +190,6 @@ ul.icons li {
     display: inline-block;
     padding: 0 2em 0 0;
 }
-
-ul.icons li:last-child {
-    padding-right: 0;
-}
-
-ul.icons li .icon:before {
-    font-size: 2em;
-}
-
 
 /* Wrapper */
 
@@ -286,7 +257,12 @@ ul.icons li .icon:before {
     width: 66%;
 }
 
-/*  */
+/* Content Item */
+
+.content-item
+{
+    margin-bottom: 55px;
+}
 
 .content-item small {
     color: #888888;
